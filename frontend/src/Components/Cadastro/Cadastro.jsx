@@ -26,7 +26,7 @@ function CadastroDeUsuario() {
                 alert("Erro ao buscar resultado");
             });
     }
-
+}
 function Cadastro() {
     const navigate = useNavigate();
     
@@ -67,4 +67,4 @@ function Cadastro() {
         </div>
     );
 }
-export default Cadastro;
+export default Cadastro
