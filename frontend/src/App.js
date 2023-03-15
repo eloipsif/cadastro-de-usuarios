@@ -1,19 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
-import ListaDeUsuarios from "./Components/ListaDeUsuarios/ListaDeUsuarios";
+import Home from "./Components/Home/Home";
+import React from "react";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CadastroDeUsuario from "./Components/CadastroDeUsuario/CadastroDeUsuario";
+import Cadastro from "./Components/Cadastro/Cadastro";
+import Dowload from "./Components/Dowload/Dowload";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <ListaDeUsuarios />,
+      element: <Home />,
     },
     {
-      path: "/cadastrar",
-      element: <CadastroDeUsuario />,
+      path: "/cadastro",
+      element: <Cadastro/>,
     },
+    {
+      path: "/dowload",
+      element: <Dowload/>,
+    }
   ]);
 
   return <RouterProvider router={router} />;
